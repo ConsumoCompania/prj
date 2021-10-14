@@ -1,0 +1,225 @@
+:root{
+    --cor1: #0DFDFD;
+    --cor2: #00a748;
+    --cor3: rgb(102, 220, 226);  
+    --cor4: #0cc728; 
+    --cor5: #34FD0D;
+    --cor6: #00853a;
+    --cor7: rgb(214, 212, 150);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-transform: capitalize;
+    background-image: linear-gradient(45deg, var(--cor2)2%, var(--cor5));
+    color: white;
+    margin: auto;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.logo:hover{
+    opacity: 1;
+    cursor: default;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helbetica, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(-45deg, var(--cor2), var(--cor5));
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    
+   
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+
+    right: 0;
+    position: absolute;
+    width: 25vw;
+    
+   
+   
+    justify-content: space-around;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 0px;
+    width: 25vw;
+    height: 8vh;
+    text-align: center;
+}
+.nav-list li:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease-in;
+}
+.mob{
+    cursor: pointer;
+    display: block;
+}
+.mob div{
+    height: 0px;
+    width: 0px;
+    background-color: white;
+    margin: 0px;
+    display: none;
+    position: absolute;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--cor7);
+}
+.nav-list.active{
+    transform: translateX(0%);
+}
+main{
+    min-width: 300px;
+    max-width: 1410px;
+    padding-top: 8vh;
+    margin: auto;
+    background-color: var(--cor1);
+    position: static;
+
+}
+a#esc{
+    color: var(--cor6);
+    text-decoration: none;
+}
+a#esc::after{
+    content: '🔗';
+}
+a#esc:hover{
+    color: var(--cor1);
+}
+h2{
+    color: #00B1F0; 
+    text-align: center;
+    font-size: 2em;
+}
+p{
+    margin: 0px 15px;
+}
+footer{
+    margin-top: 290px;
+    width: 98.5%;
+    background-color: var(--cor6);
+    border: 10px outset var(--cor5);
+
+}
+
+.prt{
+    color: var(--cor4);
+    margin-bottom: 20px;
+   
+}
+div#v{
+    text-align: center;
+}
+h2{
+    text-align: left;
+    padding-left: 5px;
+}
+h2.prt{
+    
+    margin-bottom: 10px;
+}
+#m.exp{
+    font-size: 1.5em;
+}
+#h1{
+    text-align: center;
+}
+@media (max-width: 680px) {
+    p{
+        margin: 0px;
+    }
+    
+    footer{
+    margin-top: 158px;
+    width: 72%;
+    background-color: var(--cor6);
+    border: 10px outset var(--cor5);
+
+    }
+    .nav-list{
+        list-style: none;
+        display: flex;
+        top: 8vh;
+        right: 0;
+        position: absolute;
+        width: 25vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, var(--cor2) 1%, var(--cor5));
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(0%);
+        transition: transform 0.3s ease-in;
+    }
+    .mob{
+        cursor: pointer;
+        display: block;
+    }
+    .mob div{
+        height: 2px;
+        width: 32px;
+        background-color: white;
+        margin: 8px;
+        display: flex;
+        position: initial;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, Helbetica, Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+        height: 8vh;
+        
+    }
+    main{
+        padding-top: 60px; 
+        background-color: var(--cor3);
+        margin: 0px;
+        text-align: start;
+        width: 75%;
+    
+    }
+    div#v{
+        text-align: start;
+    }
+    footer{
+        margin-top: 290px;
+        width: 71%;
+        background-color: var(--cor6);
+        border: 10px outset var(--cor5);
+    
+    }
+    .nav-list li{
+        letter-spacing: 3px;
+        margin-left: 0px;
+        width: 25vw;
+        height: 25%;
+        text-align: center;
+    }
+    
+} 
