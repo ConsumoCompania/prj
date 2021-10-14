@@ -1,0 +1,216 @@
+body{
+    background-image: url(imgs/fundo.jpg);
+    overflow-x: hidden;
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #b9ffeb;
+    padding: 1px 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 1464; 
+}
+header > h1#Title{
+    border: 10px outset #34FD0D;
+    color: #00B1F0;
+    background-color: #03ffb8;
+    outline: 5px dashed #34FD0D;
+    
+  
+}
+
+main{
+    background-color: #b9ffeb;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding-bottom: 10px;
+    
+    margin: auto;
+}
+tr{
+    transition: 2s;
+}
+h2{
+    color: #00B1F0; 
+    margin-left: 8px;
+}
+p{
+    font-size: larger;
+    margin-left: 8px;
+}
+h1{
+    color: #00B1F0; 
+    text-align: center;
+    font-size: 2em;
+}
+h2#in{
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: #00B1F0;
+}
+a:hover{
+    font-size: 1.3em;
+}
+article.q{
+    display: inline-block;
+    text-align: center;
+    border: 10px outset #34FD0D;
+    background-color: #0BE3A6;
+    margin-right: 0px;
+    padding: 10px 95px;
+    
+}
+ul.q{
+    display: inline-block;
+    text-align: center;
+    border: 10px outset #34FD0D;
+    background-color: #0BE3A6;
+    margin-right: 0px;
+    padding: 10px 50px;
+    
+}
+h2.l{
+    padding-left: 21px;
+    text-align: center;
+}
+h2#l2{
+    padding-left: 750px;
+}
+.nomes{
+    color: #00b1f0;
+    text-shadow: 1px 1px 1px 1px #00B1F0;
+    margin-left: 3px;
+    display: inline;
+}
+
+article#o{
+    margin-left: 25px;
+}
+table {
+    border: 3px solid #34FD0D;
+    border-collapse: collapse;
+    
+    
+  }
+  th,
+tr,
+td {
+  border: 3px outset #34FD0D;;
+  color: #00B1F0;
+}
+#cont{
+    text-align: center;
+}
+input#nome{
+    padding: auto;
+}
+@media (max-width: 680px){
+    article#o{
+        margin-left: 0px;
+    }
+    article.q{
+        display: inline-block;
+        text-align: center;
+        border: 10px outset #34FD0D;
+        background-color: #0BE3A6;
+        margin-right: 0px;
+        padding: 10px 65px;
+        
+    }
+    ul.q{
+        display: block;
+        text-align: center;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+    }
+}
+#button{
+    text-align: center;
+}
+body > p, h1, h2{
+    margin-left: 4px;
+}
+body > h1, h2{
+    text-shadow: 1px 1px #00B1F0;
+}
+
+div#botão{
+    border: 4px solid #00B1F0;
+    width: 130px;
+    font: small-caps;
+    margin: auto;
+    background-color: #34FD0D;
+}
+div#botão:hover{
+    background-color: #31dc0f;
+}
+a.botão:hover{
+    font-size: 1em;
+}
+div.imgs{
+    text-align: center;
+}
+button{
+    border: 3px outset #00B1F0;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    cursor: default;
+}
+article#botão{
+    text-align: center;
+    
+}
+div#img > img{
+    
+    margin-bottom: 5px;
+}
+div#img{
+    text-align: center;
+    
+}
+#img{
+    text-align: center;
+}
+
+/*<main>
+        <section>
+            <article>
+                <h2>Oque É?</h2>
+                <p>Uma pessoa consumista é aquela obtem bens ou serviços exageradamente, ou seja, é a pessoa que consome por impulso.
+                <strong>Bom vamos ver oque isso significa?</strong></p>
+            </article>
+            <article>
+                <h2>Oque Causa?</h2>
+                <p>Muitas vezes a indivíduo não é consumista por sua própria escolha, o consumo é influenciado principalmente pelo contexto social em que se vive,e seus costumes, educação e como o indivíduo foi criado, até mesmo o local ou país de habitação.</p>
+                <p>Também é necessário ressaltar que, as empresa de marcketing propositalmente estudam seu público-alvo, criando estratégias, para assim convence-lo a comprar o seu produto, mesmo não havendo realmente necessidade.</p>
+            </article>
+            <article>
+                <h2>Impactos</h2>
+                <p>Seguindo a lógica de que quanto mais se consome mais se produz, ou seja, é necessaria matéria-prima que muitas vezes não é renovável como o petróleo e minérios como o carvão;seu processo de extração causa muitos danos no meio ambiente como retirada da cobertura vegetal.E também é necessária mão de obra, que muitas vezes trablham em condições isalubres, pois as empresas criam suas fabricas em páises subdesenvolvidos onde a mão de obra é barata.</p>
+                <p class="esp">Todos esses fatores criam uma reação em cadeia que geram outros problemas, como o <a href="https://pt.wikipedia.org/wiki/Assoreamento" target="_blank" rel="external" class="letras">assoreamento de rios</a>, a erosão, até mesmo poluição dos recursos hídricos pelas <a href="https://pt.wikipedia.org/wiki/Impactos_ambientais_da_minera%C3%A7%C3%A3o" target="_blank" rel="external" class="letras">toxinas</a> gerada no processo de extração, também problemas socioeconômicos, por exemplo, a "lama" gerada nesses processos, é enviada para barragens, que muitas vezes ficam em áreas habitadadas, e podem gerar acidentes como em <a href="https://pt.wikipedia.org/wiki/Rompimento_de_barragem_em_Brumadinho" target="_blank" rel="external" class="letras">Brumadinho</a> que geram danos ecológicos, sociais, e prejuízos economicos.</p>
+            </article>
+            <article>
+                <h1>Tipos de Consumo Renovável</h2>
+                    <p style="text-align: center;font-size: 17px;"><i>Para evitar esses danos e impactos, tanto à sociedade quanto ao meio ambiente, existem maneiras, e éticas, de como praticar o ato de consumir, que englobando tudo, é o chamado consumo renovável.</i></p>
+            </article>
+        </section>
+        <section>
+            <article></article>
+            <article></article>
+        </section>
+    </main>*/

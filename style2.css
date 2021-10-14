@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+    color: #00B1F0;
+    
+    
+}
+h1{
+    text-align: center;
+    color: #00B1F0;
+    text-shadow: 1px 1px 2px #00B1F0;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
+
+}
+header > div > h1{
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px white;
+}
+p{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+body{
+    margin: 0px;
+    background-image: linear-gradient(-45deg, #1b6e0b, #0BE32C);
+  
+   
+}
+header{
+    background-image: linear-gradient(-45deg, #1b6e0b, #0BE32C);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: auto;
+    text-align: center;
+}
+
+h1.b{
+    border: 8.3px outset #34FD0D;
+    color: #00B1F0;
+    background-color: #03ffb8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 11px 0px;
+    font-size: 1.999em;
+}
+h1.b:hover{
+    background-color: #299f12;
+}
+main{
+    background-image: linear-gradient(-45deg, #1b6e0b, #0BE32C);
+    height: 153px;
+    text-align: center;
+}
+
+    
+
+h1#w{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+img{
+    margin-bottom: 80px;
+}
+div#sig{
+    display: none;
+}
+div#oi:hover > a > picture > div#sig{
+    display: block;
+} 
+/*paleta de cores*/
+
