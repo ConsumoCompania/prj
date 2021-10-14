@@ -125,13 +125,26 @@ footer{
     border: 10px outset var(--cor5);
 
 }
-
+div#bts{
+    text-align: center;
+}
+button#int{
+    text-align: center;
+    border: 6px outset yellowgreen;
+    width: 12%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--cor4);
+    text-shadow: 1px 1px var(--cor4);
+    font-size: 1.2em;
+    
+}
 .prt{
     color: var(--cor4);
     margin-bottom: 20px;
    
 }
-div#v{
+div.video{
     text-align: center;
 }
 h2{
