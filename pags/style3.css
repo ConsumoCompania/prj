@@ -234,5 +234,8 @@ h2.prt{
         height: 25%;
         text-align: center;
     }
+    button#int{
+        width: 50%;
+    }
     
 } 
