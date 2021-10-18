@@ -12,6 +12,14 @@ var texto = document.getElementById('cor')
 texto.textContent = cores[cor] + ':'
 
 console.log(cor)
+function ver(x){
+    while (cores[x] == cores[cor]){
+        if(cores[x] == cores[cor]){
+            mudar()
+        }
+    }
+
+}
 //lista onde entraram os jogadores com as propriedades vitorias, nome e derrotas
 var jogadores = []
 function add(c){
@@ -97,7 +105,8 @@ function certo(){
     exibir(jogadores)
     h.push(cores[cor])
     h = h
-    verificar()
+    mudar()
+    ver()
     garantir()
     
 }
@@ -119,37 +128,45 @@ function mudar(){
     
 }
 function verificar(){
+    var x;
     if (cores[cor] == 'azul'){
         if(input == "papel" | input == "papelão" | input == 'papel ou papelão' |input == "papel" & m.textContent == 'Errou'| input == "papelão" & m.textContent == 'Errou'| input == 'papel ou papelão' & m.textContent == 'Errou'){
            certo()
+           x = 2
            
         }
     }else if (cores[cor] == 'vermelho'){
         if(input == "plástico" |input == "plástico" & m.textContent == 'Errou'){
             certo()
+            x = 0
         }
     }else if (cores[cor] == 'verde'){
         if(input == "vidro"|input == "vidro" & m.textContent == 'Errou'){
             certo()
+            x = 4
         }
     }else if (cores[cor] == 'amarelo'){
         if(input == "ferro" | input == "metal"|input == "ferro" & m.textContent == 'Errou'| input == "metal" & m.textContent == 'Errou'){
             certo()
+            x = 1
             
         }
     }else if (cores[cor] == 'marrom'){
         if(input == "orgânico" | input == "lixo orgânico"|input == "orgânico" & m.textContent == 'Errou'|input == "lixo orgânico" & m.textContent == 'Errou'){
             certo()
+            x = 3
         }
     }else if (cores[cor] == 'cinza'){
         if(input == "não reciclável"|input == "não reciclável" & m.textContent == 'Errou'){
             certo()
+            x =5
         }
     }
 }
 //envia a resposta, se estiver correta adiciona 1 ponto a tabela de vitorias e o mesmo para derrotas
 function enviar(){
     var input = document.getElementById('vermelho').value.toLowerCase()
+    var x;
     var jogador = jogadores[lm]
     if(jogador.vitorias == 6){
         finalizar()
@@ -157,7 +174,7 @@ function enviar(){
         if (cores[cor] == 'azul'){
             if(input == "papel" | input == "papelão" | input == 'papel ou papelão' |input == "papel" & m.textContent == 'Errou'| input == "papelão" & m.textContent == 'Errou'| input == 'papel ou papelão' & m.textContent == 'Errou'){
             certo()
-            
+            x = 2
             
             }else{
                 errado()
@@ -165,6 +182,7 @@ function enviar(){
         }else if (cores[cor] == 'vermelho'){
             if(input == "plástico" |input == "plástico" & m.textContent == 'Errou'){
                 certo()
+                x =0
                 
             }else{
                 errado()
@@ -172,6 +190,7 @@ function enviar(){
         }else if (cores[cor] == 'verde'){
             if(input == "vidro"|input == "vidro" & m.textContent == 'Errou'){
                 certo()
+                x = 4
                 
             }else{
                 errado()
@@ -179,7 +198,7 @@ function enviar(){
         }else if (cores[cor] == 'amarelo'){
             if(input == "ferro" | input == "metal"|input == "ferro" & m.textContent == 'Errou'| input == "metal" & m.textContent == 'Errou'){
                 certo()
-                
+                x = 1
                 
             }else{
             errado()
@@ -187,14 +206,14 @@ function enviar(){
         }else if (cores[cor] == 'marrom'){
             if(input == "orgânico" | input == "lixo orgânico"|input == "orgânico" & m.textContent == 'Errou'|input == "lixo orgânico" & m.textContent == 'Errou'){
                 certo()
-                
+                x = 3
             }else{
             errado()
             }
         }else if (cores[cor] == 'cinza'){
             if(input == "não reciclável"|input == "não reciclável" & m.textContent == 'Errou'){
                 certo()
-            
+                x = 5
             }else{
             errado()
             }
