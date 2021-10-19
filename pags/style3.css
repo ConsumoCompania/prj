@@ -17,7 +17,8 @@ header{
     background-image: linear-gradient(45deg, var(--cor2)2%, var(--cor5));
     color: white;
     margin: auto;
-    
+  
+   
 }
 a{
     color: white;
@@ -25,11 +26,13 @@ a{
 }
 a:hover{
     opacity: 0.7;
+    
 }
 .logo{
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    
 }
 .logo:hover{
     opacity: 1;
@@ -44,22 +47,17 @@ nav{
     height: 8vh;
     width: 100%;
     position: fixed;
-    
-   
 }
 .nav-list{
     list-style: none;
     display: flex;
-
     right: 0;
     position: absolute;
     width: 25vw;
-    
-   
-   
     justify-content: space-around;
     transform: translateX(0%);
     transition: transform 0.3s ease-in;
+
 }
 .nav-list li{
     letter-spacing: 3px;
@@ -67,6 +65,7 @@ nav{
     width: 25vw;
     height: 8vh;
     text-align: center;
+    
 }
 .nav-list li:hover{
     background-color: rgba(255, 255, 255, 0.4);
@@ -114,6 +113,7 @@ h2{
     color: #00B1F0; 
     text-align: center;
     font-size: 2em;
+    
 }
 p{
     margin: 0px 15px;

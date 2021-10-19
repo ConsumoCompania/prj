@@ -109,6 +109,7 @@ function certo(){
     ver()
     garantir()
     
+    
 }
 //muda a cor da lixeira
 function mudar(){
@@ -199,7 +200,6 @@ function enviar(){
             if(input == "ferro" | input == "metal"|input == "ferro" & m.textContent == 'Errou'| input == "metal" & m.textContent == 'Errou'){
                 certo()
                 x = 1
-                
             }else{
             errado()
             }
@@ -208,7 +208,7 @@ function enviar(){
                 certo()
                 x = 3
             }else{
-            errado()
+                errado()
             }
         }else if (cores[cor] == 'cinza'){
             if(input == "não reciclável"|input == "não reciclável" & m.textContent == 'Errou'){
