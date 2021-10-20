@@ -62,11 +62,11 @@ nav{
 .nav-list li{
     letter-spacing: 3px;
     margin-left: 0px;
-    margin-right: 5px;
+    
     width: 25vw;
     height: 8vh;
     text-align: center;
-    padding-left: 2px;
+   
     
 }
 .nav-list li:hover{
@@ -216,7 +216,7 @@ h2.prt{
         background-color: var(--cor3);
         margin: 0px;
         text-align: start;
-        width: 75%;
+        width: 73%;
     
     }
     div#v{
