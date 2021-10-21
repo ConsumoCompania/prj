@@ -65,12 +65,13 @@ function exibir(jogadores) {
     
     
     var tela = document.getElementById("tabelaJogadores")
-    for(var yu = 0; yu <= 2; yu++)
+    for(var yu = 0; yu <= 2; yu++){
     tela.innerHTML = element
     
-  }
-  exibir(jogadores)
-  //envia o nome e propriedades do jogador novo para o array no inicio do código
+    }
+}
+exibir(jogadores)
+//envia o nome e propriedades do jogador novo para o array no inicio do código
 function Envia() {
     var p = document.getElementById("aviso")
     var nome = document.getElementById("nome").value
