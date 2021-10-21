@@ -94,11 +94,8 @@ function errado() {
     m.textContent = "Errou"
     add(lm)
     verificar()
-   
     exibir(jogadores)
     garantir()
-
-
 }
 function certo(){
     m.textContent = 'acertou'
@@ -109,8 +106,6 @@ function certo(){
     mudar()
     ver()
     garantir()
-    
-    
 }
 //muda a cor da lixeira
 function mudar(){
@@ -218,10 +213,8 @@ function enviar(){
             }else{
             errado()
             }
+        }
     }
-}
-    
-
     input = document.getElementById('vermelho')
     input.value = " "
 }
@@ -231,8 +224,6 @@ function finalizar(){
       document.getElementById('env').disabled = true
       document.getElementById('enviar').disabled = false
       verificar()
-
-      
 }
 /*Azul: Papel e Papelão</span>Vermelho: Plástico</span>Verde: vidroAmarelo: metal</span><span style="margin-left: 10px;">Marrom: organico</span>Cinza: não reciclavel*/
 // criando um objeto que armazena propriedades diferentes
