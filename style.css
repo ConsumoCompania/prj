@@ -153,6 +153,7 @@ div#botão{
 }
 div#botão:hover{
     background-color: #31dc0f;
+    transition: background-color 0.299s ease-in;
 }
 a.botão:hover{
     font-size: 1em;
