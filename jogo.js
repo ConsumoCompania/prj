@@ -16,6 +16,7 @@ function ver(x){
     while (cores[x] == cores[cor]){
         if(cores[x] == cores[cor]){
             mudar()
+            
         }
     }
 
@@ -164,7 +165,7 @@ function verificar(){
 }
 //envia a resposta, se estiver correta adiciona 1 ponto a tabela de vitorias e o mesmo para derrotas
 function enviar(){
-    var input = document.getElementById('vermelho').value.toLowerCase()
+    var input = document.getElementById('vermelho').value.toLowerCase().trim()
     var x;
     var jogador = jogadores[lm]
     if(jogador.vitorias == 6){
