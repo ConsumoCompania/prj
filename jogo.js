@@ -22,10 +22,11 @@ function ver(x){
 }
 //lista onde entraram os jogadores com as propriedades vitorias, nome e derrotas
 var jogadores = []
-function add(c){
-    var jogador = jogadores[c]
+function add(i){
+    var jogador = jogadores[i]
     jogador.derrotas += 1
     exibir(jogadores)
+    verificar()
 }
 
 function adicionarvitoria(x){
@@ -95,6 +96,7 @@ function errado() {
     add(lm)
     verificar()
     exibir(jogadores)
+
     garantir()
 }
 function certo(){
