@@ -19,15 +19,16 @@ function menu(){
 }
 
 function io(){
-    var videos = ["<iframe width='75%' height='538' src='https://www.youtube.com/embed/fj0BniP9ijk' title='YouTube video player' frameborder='0' allow=''accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", "<iframe width='956' height='538' src='https://www.youtube.com/embed/ibC05IZUOys' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"]
+    var videos = ["<iframe width='75%' height='538' src='https://www.youtube.com/embed/fj0BniP9ijk' title='YouTube video player' frameborder='0' allow=''accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", "<iframe width='75%' height='538' src='https://www.youtube.com/embed/ibC05IZUOys' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"]
     if(i==0){
         for(var b = 0; b<videos.length; b++){
             var n = 0
             var art =  document.getElementById('v' + b.toString())
-            art.innerHTML =  videos[n]
+            art.innerHTML =  videos[b]
+            art.style.marginBottom = "5px"
             n++
             
-            
+            document.getElementById('m').style.display = "block"
         }
         i++ 
     }else{
@@ -36,8 +37,10 @@ function io(){
             var n = 0
             var art =  document.getElementById('v' + b.toString())
             art.innerHTML =  ''
+            document.getElementById('m').style.display = "none"
             n++
         }
 
     }
+   
 }
