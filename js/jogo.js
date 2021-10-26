@@ -1,10 +1,10 @@
+
 var cores = ['vermelho', 'amarelo', 'azul', 'marrom', 'verde', 'cinza']
 document.getElementById('enviar').disabled = false
 var lm = -1
 var h = []
 // definindo a cor a ser escolhida
 var cor = (Math.random()*5).toFixed(0)
-
 var m = document.getElementById("display")
 
 var texto = document.getElementById('cor')
