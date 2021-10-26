@@ -7,7 +7,7 @@ function menu(){
     if(p == 0){
         t.style.transform = 'translateX(100%)'
         p++
-        e.style.paddingLeft = "50px"
+        
         document.querySelector('main').style.width = "100%"
     }else{
         t.style.transform = 'translateX(0%)'
