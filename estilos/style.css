@@ -1,5 +1,5 @@
 body{
-    background-image: url(imgs/fundo.jpg);
+    background-image: url(../imgs/fundo.jpg);
     overflow-x: hidden;
 }
 header{
