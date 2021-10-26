@@ -243,5 +243,8 @@ h2.prt{
     h1{
         text-align: left;
     }
+    .prt{
+        text-align: center;
+    }
     
 } 
