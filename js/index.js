@@ -13,7 +13,7 @@ function menu(){
         t.style.transform = 'translateX(0%)'
         p = 0
         e.style.paddingLeft = "0px"
-        document.querySelector('main').style.width = "73%"
+        document.querySelector('main').style.width = "75%"
         document.querySelector('main').style.textAlign = "left"
     }
 }
