@@ -66,7 +66,7 @@ function exibir(jogadores) {
     }
     
     
-    var tela = document.getElementById("tabelaJogadores")
+    var tela = document.getElementById("tabelaJogadores");
     for(var yu = 0; yu <= 2; yu++){
     tela.innerHTML = element
     
