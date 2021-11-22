@@ -60,7 +60,7 @@ function exibir(jogadores) {
           element += "<td>"+ jogadores[i].vitorias +"</td>"
          
           element += "<td>"+ jogadores[i].derrotas + "</td>"
-          element += "<td>"+ (jogadores[i].vitorias/(jogadores[i].derrotas + jogadores[i].vitorias)*100).toString() + "%"+"</td>"
+          element += "<td>"+ (jogadores[i].vitorias/(jogadores[i].derrotas + jogadores[i].vitorias)*100).toString().toFixed(2) + "%"+"</td>"
           element += "</tr>"
           
     }
