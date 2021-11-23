@@ -34,22 +34,39 @@
         <article style="text-align: center;">
             <h1 class="prt">Projetos</h1>
         </article>
-        <div id="m" style="display: none;">
+        <div id="m">
             <article>
                 <h1 class="prt">Projeto 1: Cuidando de sua Plantinha</h1>
-                <div id="v0" class="video"></div>
+                <div id="v0" class="video">
+                    <iframe width='75%' height='538' src='https://www.youtube.com/embed/wwzGtYitFEI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                </div>
             </article>
             <article>
                 <h1 class="prt">Projeto 2:Árvore do Consumo Consciente</h1>
-                <div id="v1" class="video"></div>
+                <div class="video">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="../imgs/arv1.jpg" sizes="">
+                        <img src="../imgs/arv.jpg" alt="">
+                    </picture>
+                    <p>Esse projeto consiste, em explicar o consumo sustentável, através da confecção de um cartaz</p>
+                    
+                </div>
             </article>
+            <article>
+                <h1 class="prt">Projeto 3: Mesa de Artesanatos</h1>
+                <div class="video">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="../imgs/mesa1.jpg" sizes="">
+                        <img src="../imgs/mesa.jpg" alt="">
+                    </picture>
+                    <p>Para realizar esse projetos, recolhemos e ultilizamos materiais reciclaveis, para criar alguns objetos, que estarão em exposição na escola</p>
+                </div>
+            </article>
+           
         </div>
        
         
-        <div id="bts">
-           
-            <button id="int" onclick="io()">mostrar projetos em video</button>
-        </div>
+        
    </main>
    
    <script src="../js/index.js"></script>
