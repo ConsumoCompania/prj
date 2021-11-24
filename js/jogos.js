@@ -53,32 +53,38 @@ function garantir(){
 }
 
 //cria a tebela
-function exibir(jogadores) {
+function exibir(j) {
     var element = ""
-    for (var i = 0; i < jogadores.length; i++) {
-          element += "<tr><td>"+ jogadores[i].nome + "</td>"
-          element += "<td>"+ jogadores[i].vitorias +"</td>"
+    for (var i = 0; i < j.length; i++) {
+          element += "<tr><td>"+ j[i].nome + "</td>"
+          element += "<td>"+ j[i].vitorias +"</td>"
          
-          element += "<td>"+ jogadores[i].derrotas + "</td>"
-          element += "<td>"+ (jogadores[i].vitorias/(jogadores[i].derrotas + jogadores[i].vitorias)*100).toString().toFixed(2) + "%"+"</td>"
+          element += "<td>"+ j[i].derrotas + "</td>"
+          element += "<td>"+ (j[i].vitorias/(j[i].derrotas + j[i].vitorias)*100).toFixed(2).toString() + "%"+"</td>"
           element += "</tr>"
-          
+          var tela = document.getElementById("tabelaJogadores");
+        for(var yu = 0; yu <= 2; yu++){
+            tela.innerHTML = element
+    
+        }
+        
     }
     
     
-    var tela = document.getElementById("tabelaJogadores");
-    for(var yu = 0; yu <= 2; yu++){
-    tela.innerHTML = element
     
-    }
 }
 exibir(jogadores)
 //envia o nome e propriedades do jogador novo para o array no inicio do código
-function Envia() {
+function Enviaa() {
+    
+}
+function Enviar(){
     var p = document.getElementById("aviso")
     var nome = document.getElementById("nome").value
+    
     if ( nome != ""){
-      var nome = document.getElementById("nome").value
+      
+      
       var nj = {nome:nome, vitorias:0, empates:0, derrotas:0, pontos:0};
       jogadores.push(nj)
       exibir(jogadores)
@@ -91,6 +97,7 @@ function Envia() {
   
       p.innerHTML = "Escreva um nome"
     }
+    exibir(jogadores)
 }
 function errado() {
     m.textContent = "Errou"
